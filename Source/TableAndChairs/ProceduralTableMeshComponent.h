@@ -16,6 +16,7 @@ class TABLEANDCHAIRS_API UProceduralTableMeshComponent : public UProceduralMeshC
 public:
     void SetBaseSize(FVector NewBaseSize) {this->BaseSize = NewBaseSize;}
     void SetLegSize(FVector NewLegSize) {this->LegSize = NewLegSize;}
+    FVector GetBaseSize() const {return BaseSize;}
 
 protected:
     UPROPERTY(VisibleAnywhere)
